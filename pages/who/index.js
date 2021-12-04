@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-         Postart.org
+         Whos is Postart.org
         </h1>
         <Image src="/under-construction90s-90s.gif" alt="Underconstruction" width={266} height={266} />
       </main>
