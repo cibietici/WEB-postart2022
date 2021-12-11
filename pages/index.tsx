@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
+        <html lang="en" />
         <title>Postart</title>
         <meta name="description" content="Postart - experiments" />
         <link rel="icon" href="/favicon.ico" />
