@@ -10,7 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #00350a;
+  background: rgb(2,0,36);
+  background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(121,9,118,1) 40%, rgba(0,212,255,1) 100%);
 }
 
 .main::before {    
@@ -22,21 +23,33 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.15;
+  opacity: 0.25;
 }
 
 .experimentsList {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1.2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .experimentsList {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 .experimentsList a {
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .experimentsList a {
+    margin: 2rem 0;
+  }
 }
 
 .experimentsList li {
@@ -52,9 +65,16 @@
   font-size: 26vh;
   color: var(--border-nav-item-color);
   padding: 0;
-  margin: 0;
   position: relative;
   transition: transform 0.2s ease-in-out;
+  box-shadow: 0px 0px 4px #000;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .experimentsList li {
+    margin: 0;
+  }
 }
 
 .experimentsList li::before {
@@ -81,13 +101,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 4rem;
+  font-size: 3.6rem;
   padding-top: 30%;
   line-height: 100%;
   z-index: 2;
   width: 100%;
   text-align: center;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(102, 171, 184, 0.5);
   height: 100%;
   margin: 0;
   transform: translateX(-300px);
