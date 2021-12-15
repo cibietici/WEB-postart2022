@@ -6,24 +6,40 @@
   min-height: 100vh;
   padding: 0;
   flex: 1;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgb(2,0,36);
-  background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(121,9,118,1) 40%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(110deg, rgb(192, 0, 166) 0%, rgb(177, 108, 174) 40%, rgba(0,212,255,1) 100%);
 }
 
 .main::before {    
   content: "";
-  background-image: url('../public/homeback001.webp');
+  /*background-image: url('../public/homeback003.webp');*/
   background-size: cover;
   position: absolute;
+  overflow: hidden;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   opacity: 0.25;
+}
+
+@keyframes slowZoom {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(8);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 .experimentsList {
@@ -79,7 +95,7 @@
 
 .experimentsList li::before {
   content: "";
-  background-image: url('../public/backthumb.webp');
+  /*background-image: url('../public/backthumb.webp');*/
   background-size: cover;
   position: absolute;
   top: -2rem;
