@@ -16,7 +16,7 @@ export function spots(el) {
 export const spotsEl = [
     {
         id: 1,
-        color: 'red',
+        color: 'rgb(110, 20, 90)',
         width: 250,
         posX: 30,
         posY: 40,
@@ -24,18 +24,26 @@ export const spotsEl = [
     },
     {
         id: 2,
-        color: 'red',
+        color: 'rgb(100, 10, 50)',
         width: 150,
         posX: 60,
-        posY: 80,
+        posY: 40,
         animation: 'down'
     },
     {
-        id: 2,
-        color: 'red',
+        id: 3,
+        color: 'rgb(90, 0, 40)',
         width: 300,
         posX: 30,
-        posY: 30,
-        animation: 'up'
+        posY: 20,
+        animation: 'left'
+    },
+    {
+        id: 4,
+        color: 'rgb(80, 10, 90)',
+        width: 100,
+        posX: 60,
+        posY: 60,
+        animation: 'right'
     }
 ]

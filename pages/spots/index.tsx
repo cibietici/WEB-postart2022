@@ -18,7 +18,7 @@ export default function Home() {
         {
           spotsEl.map((spot) =>(
             <div key={spot.id} 
-              className={styles.spot + ' ' + styles.spotanimationup}
+              className={`${styles.spot} animation${spot.animation}`}
               style={
                 {
                   backgroundColor: spot.color,

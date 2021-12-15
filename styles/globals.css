@@ -21,3 +21,103 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.animationdown {
+  animation-name: movedown;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.animationup {
+  animation-name: moveup;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.animationleft {
+  animation-name: moveleft;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.animationright {
+  animation-name: moveright;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveup {
+  from {
+      transform: translate(0px, 0px);
+  }
+
+  40% {
+      transform: translate(10px, 20px);
+  }
+
+  60% {
+      transform: translate(-20px, 40px);
+  }
+
+  to {
+      transform: translate(0px, 0px);
+  }
+}
+
+@keyframes movedown {
+  from {
+      transform: translate(0px, 0px);
+  }
+
+  40% {
+      transform: translate(-40px, -20px);
+  }
+
+  60% {
+      transform: translate(60px, 40px);
+  }
+
+  to {
+      transform: translate(0px, 0px);
+  }
+}
+
+@keyframes moveleft {
+  from {
+      transform: translate(0px, 0px);
+  }
+
+  40% {
+      transform: translate(60px, 0px);
+  }
+
+  60% {
+      transform: translate(-60px, -40px);
+  }
+
+  to {
+      transform: translate(0px, 0px);
+  }
+}
+
+@keyframes moveright {
+  from {
+      transform: translate(0px, 0px);
+  }
+
+  40% {
+      transform: translate(-80px, -30px);
+  }
+
+  60% {
+      transform: translate(20px, 60px);
+  }
+
+  to {
+      transform: translate(0px, 0px);
+  }
+}
