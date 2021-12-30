@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import React, { SetStateAction } from 'react'
 import styles from '../../styles/Spots.module.css'
 import { spots, spotsEl, bacteries } from '../../utils/utils'
@@ -31,9 +32,11 @@ export default function Home() {
               </div>
           ))
         }
-        <div className='shape'><img src="/public/shape01.svg" /></div>
+        <div className={styles.shape}>
+          <Image src="/shape01.svg" alt="shape" width={500} height={600} />
+        </div>
         {
-          bacteries(1200).map((b) =>{
+          bacteries(4800).map((b) =>{
 
             return <div className={styles.bactery}
               key={b.id}

@@ -53,8 +53,8 @@ export const bacteries =  iteration => {
     for(var i = 1; i <= iteration; i++) {
         const wr = Math.round(Math.random() * 10)
         const hr = Math.round(Math.random() * 10)
-        const xpos = (Math.random() * 1200)
-        const ypos = (Math.random() * 800)
+        const xpos = (Math.random() * screen.width)
+        const ypos = (Math.random() * screen.height)
         bact.push(
             {
                 id: i,
