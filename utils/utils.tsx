@@ -46,23 +46,25 @@ export const spotsEl = [
     }
 ]
 
-export const bacteries =  () => {
-    return [
-        {
-            id: 1,
-            width: 3,
-            height: 3
-        },
-        {
-            id: 1,
-            width: 3,
-            height: 3
-        }
-        ,
-        {
-            id: 1,
-            width: 3,
-            height: 3
-        }
-    ]
+export const bacteries =  iteration => {
+
+    let bact = []
+
+    for(var i = 1; i <= iteration; i++) {
+        const wr = Math.round(Math.random() * 10)
+        const hr = Math.round(Math.random() * 10)
+        const xpos = (Math.random() * 1200)
+        const ypos = (Math.random() * 800)
+        bact.push(
+            {
+                id: i,
+                width: wr,
+                height: hr,
+                top: ypos,
+                left: xpos
+            }
+        )
+
+    }
+    return bact
 }

@@ -8,14 +8,39 @@
 
 .spot {
     position: absolute;
+    z-index: 100;
     font-size: 32px;
     border-radius: 100%;
     opacity: 0.8;
 }
 
+.shape {
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 .bactery {
     position: absolute;
-    background-color: black;
-    top: 40px;
-    left: 40px;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+    animation-name: pulsing;
+    animation-duration: 0.9;
+}
+
+@keyframes pulsing {
+    from {
+        opacity: 0.4;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.4;
+    }
 }

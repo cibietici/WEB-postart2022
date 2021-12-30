@@ -31,18 +31,18 @@ export default function Home() {
               </div>
           ))
         }
+        <div className='shape'><img src="/public/shape01.svg" /></div>
         {
-          bacteries().map((b) =>{
-            const xpos = (Math.random() * 100) + 40
-            const ypos = (Math.random() * 100) + 40
+          bacteries(1200).map((b) =>{
+
             return <div className={styles.bactery}
               key={b.id}
               style={
                 {
                   width: `${b.width}px`,
                   height: `${b.height}px`,
-                  top: `${ypos}px`,
-                  left: `${xpos}px`
+                  top: `${b.top}px`,
+                  left: `${b.left}px`
                 }
               }>
             </div>
