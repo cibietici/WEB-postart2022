@@ -3,8 +3,6 @@ export function spots(el) {
     const radius = '50%'
     const where = document.getElementById(el)
 
-    console.log(where)
-
     const spot = document.createElement('div')
     spot.style.backgroundColor = 'red'
     spot.style.borderRadius = radius
@@ -47,3 +45,24 @@ export const spotsEl = [
         animation: 'right'
     }
 ]
+
+export const bacteries =  () => {
+    return [
+        {
+            id: 1,
+            width: 3,
+            height: 3
+        },
+        {
+            id: 1,
+            width: 3,
+            height: 3
+        }
+        ,
+        {
+            id: 1,
+            width: 3,
+            height: 3
+        }
+    ]
+}
