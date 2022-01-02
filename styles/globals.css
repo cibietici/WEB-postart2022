@@ -60,7 +60,7 @@ a {
   }
 
   60% {
-      transform: translate(-20px, 40px);
+      transform: translate(-40px, 60px);
   }
 
   to {
@@ -74,7 +74,7 @@ a {
   }
 
   40% {
-      transform: translate(-40px, -20px);
+      transform: translate(-10px, -10px);
   }
 
   60% {

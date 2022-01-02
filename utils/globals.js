@@ -1,12 +1,12 @@
 export const experiments = [
     {
         increment: 1,
-        title: 'Random words',
+        title: 'compr hensive',
         link: '/letters'
     },
     {
         increment: 2,
-        title: 'Blecky spots',
+        title: 'Digital organism',
         link: '/spots'
     },
 ]

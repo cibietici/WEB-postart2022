@@ -7,6 +7,8 @@ import { spots, spotsEl, bacteries } from '../../utils/utils'
 
 export default function Home() {
 
+  let pulsingVariation = 'A'
+
   return (
     <div className={styles.container}>
       <Head>
@@ -33,22 +35,27 @@ export default function Home() {
           ))
         }
         <div className={styles.shape}>
-          <Image src="/shape01.svg" alt="shape" width={500} height={600} />
+          <Image src="/shape01.svg" alt="shape" layout='fill' width={500} height={100} />
         </div>
         {
           bacteries(4800).map((b) =>{
 
-            return <div className={styles.bactery}
+            const output = <div className={styles.bactery}
               key={b.id}
               style={
                 {
                   width: `${b.width}px`,
                   height: `${b.height}px`,
                   top: `${b.top}px`,
-                  left: `${b.left}px`
+                  left: `${b.left}px`,
+                  //animationName: `pulsing${pulsingVariation}`,
+                  //animationDuration: '0.9s',
+                  //animationIterationCount: 'infinite'
                 }
               }>
             </div>
+            ( pulsingVariation === 'A') ? pulsingVariation = 'B' : pulsingVariation = 'A'
+            return output
           })
         }
       </main>

@@ -30,7 +30,7 @@ export const spotsEl = [
     },
     {
         id: 3,
-        color: 'rgb(90, 0, 40)',
+        color: 'rgb(240, 240, 240)',
         width: 300,
         posX: 30,
         posY: 20,
