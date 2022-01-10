@@ -40,6 +40,8 @@ export default function Home() {
         {
           bacteries(4800).map((b) =>{
 
+            const randomAnimation = Math.random() * 1000
+
             const output = <div className={styles.bactery}
               key={b.id}
               style={
@@ -48,13 +50,10 @@ export default function Home() {
                   height: `${b.height}px`,
                   top: `${b.top}px`,
                   left: `${b.left}px`,
-                  //animationName: `pulsing${pulsingVariation}`,
-                  //animationDuration: '0.9s',
-                  //animationIterationCount: 'infinite'
+                  animationDuration: `${randomAnimation}ms`
                 }
               }>
             </div>
-            ( pulsingVariation === 'A') ? pulsingVariation = 'B' : pulsingVariation = 'A'
             return output
           })
         }
