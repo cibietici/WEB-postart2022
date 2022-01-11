@@ -11,7 +11,7 @@ function createLetter(): string {
   return currentLetter
 } 
 
-export default function Home() {
+export default function Letters() {
 
   const [letter, setLetter ] = useState(createLetter())
   const [phrase, setPhrase ] = useState('')

@@ -9,6 +9,11 @@ export const experiments = [
         title: 'Digital organism',
         link: '/spots'
     },
+    {
+        increment: 3,
+        title: 'Mother',
+        link: '/mum'
+    },
 ]
 
 export const letters = [

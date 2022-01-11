@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 import { experiments } from '../utils/globals'
 
 
-export default function Home() {
+export default function Spots() {
   return (
     <div className={styles.container}>
       <Head>
