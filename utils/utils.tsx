@@ -72,9 +72,23 @@ export const bacteries =  iteration => {
 export const mums = [
         {
             id: 1,
-            width: 4,
-            height: 4,
-            top: 220,
+            width: 2,
+            height: 2,
+            top: 224,
             left: 220
+        },
+        {
+            id: 2,
+            width: 3,
+            height: 3,
+            top: 221,
+            left:223
+        },
+        {
+            id: 3,
+            width: 3,
+            height: 3,
+            top: 220,
+            left:226
         }
     ]

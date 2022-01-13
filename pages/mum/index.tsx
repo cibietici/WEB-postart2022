@@ -8,13 +8,13 @@ import { mums } from '../../utils/utils'
 export default function Mum() {
     return (
         <main className={styles.main}>
+            <div className={styles.filter}></div>
             {
             mums.map((spot) =>(
                 <div key={spot.id} 
                     className={`${styles.spot}`}
                     style={
                     {
-                        backgroundColor: spot.color,
                         width: `${spot.width}px`,
                         height: `${spot.width}px`,
                         top: `${spot.top}px`,
