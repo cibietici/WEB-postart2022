@@ -68,3 +68,13 @@ export const bacteries =  iteration => {
     }
     return bact
 }
+
+export const mums = [
+        {
+            id: 1,
+            width: 4,
+            height: 4,
+            top: 220,
+            left: 220
+        }
+    ]
