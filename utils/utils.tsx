@@ -70,25 +70,61 @@ export const bacteries =  iteration => {
 }
 
 export const mums = [
+        //over eye right
         {
             id: 1,
             width: 2,
             height: 2,
-            top: 224,
-            left: 220
+            top: 370,
+            left: 320
         },
         {
             id: 2,
             width: 3,
             height: 3,
-            top: 221,
-            left:223
+            top: 367,
+            left:323
         },
         {
             id: 3,
             width: 3,
             height: 3,
-            top: 220,
-            left:226
-        }
+            top: 366,
+            left:326
+        },
+        {
+            id: 4,
+            width: 4,
+            height: 4,
+            top: 370,
+            left: 318
+        },
+        {
+            id: 4,
+            width: 4,
+            height: 4,
+            top: 372,
+            left: 316
+        },
+        {
+            id: 4,
+            width: 4,
+            height: 4,
+            top: 373,
+            left: 312
+        },
+        {
+            id: 4,
+            width: 4,
+            height: 4,
+            top: 374,
+            left: 308
+        },
+        {
+            id: 4,
+            width: 4,
+            height: 4,
+            top: 378,
+            left: 304
+        },
     ]
